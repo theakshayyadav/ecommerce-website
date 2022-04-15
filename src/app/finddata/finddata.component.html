@@ -1,0 +1,99 @@
+<div class="container row">
+    <div class="col-lg-4">
+      <label for="" >Select State</label>
+      <select  (change)="statechanged($event)"  class="form-control mb-4">
+        <option value="">Select State</option>
+        <option   *ngFor="let state of states" value="{{state.id}}" >{{state.state}}</option>
+      </select>
+  
+      <label for="">Select Division</label>
+      <select  (change)="divisionchanged($event)" class="form-control mb-4">
+        <option value="">Select Division</option>
+        <option *ngFor="let division of divisions" value="{{division.id}}" >{{division.division}}</option>
+      </select>
+  
+      <label for="">Select District</label>
+      <select (change)="districtchanged($event)" class="form-control mb-4">
+        <option value="">Select District</option>
+        <option *ngFor="let district of districts" value="{{district.id}}" >{{district.district}}</option>
+       
+      </select>
+  
+      <label for="">Select Taluka</label>
+      <select (change)="talukachanged($event)" class="form-control mb-4">
+        <option value="">Select Taluka</option>
+        <option *ngFor="let tal of taluka" value="{{tal.id}}">{{tal.taluka}}</option>
+      </select>
+  
+      <label for="">Select Village</label>
+      <select class="form-control mb-4">
+          <option value="">Select Village</option>
+        <option *ngFor="let dtName of villages" value="{{dtName.id}}">{{dtName.name}}</option> 
+      </select>
+      <hr>
+      <div>
+        <button class="btn btn-secondary"> Clear</button>
+        <button class="btn btn-primary ms-5">Submit</button>
+      </div>
+  
+    </div>
+  
+    <div class="col-lg-8">
+      <div class="col-lg-12">
+       
+        <table class="table table-bordered">
+            <tr>
+                <th>Sr.No</th>
+                <th>State</th>
+                <th>Division</th>
+                <th>District</th>
+                <th>Taluka</th>
+                <th>Village</th>
+                <th>Edit/Delete</th>
+                
+            </tr>
+            <tr>
+                <td>efsf</td>
+                <td>sf</td>
+                <td>sf</td>
+                <td>sf</td>
+                <td>sfs</td>
+                <td>sf</td>
+                <td>
+                    <span  class="btn btn-outline-primary ">Edit</span>
+                    <a class="btn btn-outline-warning " style="margin-left: 1%;">Delete</a>   
+                </td>
+            </tr>
+        </table>
+    </div>
+  </div>
+      <!-- <div class="container-fluid">
+        <div class="row">
+     
+            <table  class="table table-bordered" >
+              <tr class="table-light">
+                <th class="table-light">Sr.No</th>
+                <th class="table-light">State</th>
+                <th class="table-light">Division</th>
+                <th class="table-light">District</th>
+                <th class="table-light">Taluka</th>
+                <th class="table-light">Village</th>
+                <th class="table-light">Edite/Delete</th>
+  
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+  
+              </tr>
+            </table>
+          </div>
+        </div> -->
+  
+    </div>
+  
